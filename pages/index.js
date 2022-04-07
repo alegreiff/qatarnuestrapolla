@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { useEffect, useState } from "react";
 import { TablaFechas } from "../components/Tablas/TablaFechas";
 import { Simple } from "../components/UI/Layout";
