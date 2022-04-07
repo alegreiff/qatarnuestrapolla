@@ -51,7 +51,7 @@ export const TablaFechas = ({ datos, columnas }) => {
         ],
       },
       {
-        Header: "Datos COLS",
+        Header: "Partidos",
         columns: [
           {
             Header: "Equipo",
