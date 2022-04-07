@@ -1,12 +1,12 @@
 import { Badge, Image, VStack } from "@chakra-ui/react";
 
 export const BanderaPais = ({ bandera, nombre }) => {
-  console.log(bandera, nombre);
+  //console.log(bandera, nombre);
   return (
     <VStack>
       <Image
         style={{ border: "1px lightgrey solid" }}
-        src={`./banderas/${bandera}.png`}
+        src={`./banderas/${bandera.toLowerCase()}.png`}
         alt={nombre}
         borderRadius="full"
         height={45}
