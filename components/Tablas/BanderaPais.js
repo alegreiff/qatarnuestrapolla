@@ -5,7 +5,7 @@ export const BanderaPais = ({ bandera, nombre }) => {
   return (
     <VStack>
       <Image
-        style={{ border: "1px lightgrey solid" }}
+        style={{ border: "3px black solid" }}
         src={`./banderas/${bandera.toLowerCase()}.png`}
         alt={nombre}
         borderRadius="full"
