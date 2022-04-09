@@ -1,16 +1,25 @@
-import { Badge, Image, VStack } from "@chakra-ui/react";
+import {
+  Badge,
+  Button,
+  Image,
+  useColorModeValue,
+  VStack,
+} from '@chakra-ui/react';
 
 export const BanderaPais = ({ bandera, nombre }) => {
-  //console.log(bandera, nombre);
+  const bordeImagen = useColorModeValue('polla.negro', 'polla.blanco');
+  const bg = useColorModeValue('red.500', 'red.200');
+
   return (
     <VStack>
       <Image
-        style={{ border: "3px black solid" }}
-        src={`./banderas/${bandera.toLowerCase()}.png`}
+        border={`3px solid`}
+        borderColor={bordeImagen}
+        src={`/banderas/${bandera.toLowerCase()}.png`}
         alt={nombre}
-        borderRadius="full"
         height={45}
         width={45}
+        borderRadius='full'
       />
       <Badge>{nombre}</Badge>
     </VStack>
