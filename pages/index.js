@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { TablaFechas } from '../components/Tablas/TablaFechas';
 import { Simple } from '../components/UI/Layout';
-
 import { sortBy } from 'lodash';
 import { desarrollo, equipos, finalPartidos } from '../polla';
 import { Button } from '@chakra-ui/react';
@@ -11,9 +10,6 @@ import Equipo from '../models/Equipo';
 export default function Home({ losteams }) {
   const [matches, setMatches] = useState(null);
   const [fase, setFase] = useState(1);
-  //nuestrapolla
-  //nU3stra4.poYA
-  //zq8kVhJkAoH7WUfv
   useEffect(() => {
     let part = [];
     if (fase === 0) {
